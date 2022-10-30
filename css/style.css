@@ -388,7 +388,12 @@ body {
   margin-bottom: 150px;
 }
 
+.why {
+  position: relative;
+}
 .why__list li::before {
+  right: 500px;
+  position: absolute;
   content: url('../assets/tiki.svg');
 
 }
@@ -522,7 +527,21 @@ body {
 }
 
 .left-segment {
+  position: relative;
   margin-right: 53px;
+}
+.left-segment::before {
+  content: url('../assets/segment.svg');
+  position: absolute;
+  bottom: 115px;
+  right: 450px;
+}
+.left-segment::after 
+{
+  position: absolute;
+  content: url('../assets/pikat2.svg');
+  top: 320px;
+  right: -35px;
 }
 
 .left-segment__p {
@@ -599,3 +618,4 @@ body {
   letter-spacing: -0.02em;
   color: #757095;
 }
+
